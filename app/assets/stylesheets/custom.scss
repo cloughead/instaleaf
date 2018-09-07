@@ -1,0 +1,23 @@
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+body {
+  background: #f5f5f5;
+}
+
+.highlight{
+  padding: 5px;
+  background: #3db370;
+}
+.highlight2{
+  background: #3db370;
+}
+.primary-color{
+  color: #3db370;
+}
+.js-g-map{
+  min-height: 800px; 
+}

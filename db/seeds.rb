@@ -6,9 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
-require 'json'
-
 file = File.read("#{Rails.root}/public/listings.json")
 data = JSON.parse(file)
 

@@ -1,0 +1,60 @@
+<section class="g-pt-50 g-bg-gray-light-v5">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 id="location" class="h3 primary-color text-uppercase g-mb-10 g-mb--lg"><i class="fa fa-map-marker"></i></h3>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="g-pt-50 g-pb-5">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="h3 primary-color text-uppercase g-mb-10 g-mb--lg">Featured Store Fronts</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <% Dispensary.storefront.limit(5).each do | store_front | %>
+            <%= render partial: 'shared/card', locals: { data: store_front} %>
+          <% end %>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="g-pt-50 g-pb-5">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="h3 primary-color text-uppercase g-mb-10 g-mb--lg">Featured Doctors</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <% Dispensary.doctor.limit(5).each do | doctor | %>
+            <%= render partial: 'shared/card', locals: { data: doctor} %>
+          <% end %>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="g-pt-50 g-pb-5">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="h3 primary-color text-uppercase g-mb-10 g-mb--lg">Featured Smoke Spots</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <% Dispensary.smoke_spot.limit(5).each do | spot | %>
+            <%= render partial: 'shared/card', locals: { data: spot} %>
+          <% end %>
+        </div>
+    </div>
+  </div>
+</section>
