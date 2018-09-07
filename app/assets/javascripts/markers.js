@@ -17,12 +17,13 @@ function createMarker(latlng,name,html,icon,lat,lng,name,rating) {
           infoBubble.close();
         }
       } 
-       infoBubble = new InfoBubble();
+       infoBubble = new InfoBubble({
+          content: '<div class="phoneytext">'+marker.name+'</div>',
+       });
     
         // $.get("marker_info/"+marker.id, function (j){
           if (!infoBubble.isOpen()) {
              infoBubble.open(map, marker);
-             infoBubble.addTab('Tab',"hello world");  
             }
         // });
     });
