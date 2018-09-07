@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require jquery.min
 //= require jquery-migrate.min
 //= require popper.min
@@ -27,4 +26,10 @@
 //= require hs.tabs
 //= require hs.rating
 //= require hs.go-to
-//= require_tree .
+//= require gmaps.min
+//= require info_window
+//= require jquery.raty
+//= require ratyrate
+//= require home
+//= require markers
+//= require maps
