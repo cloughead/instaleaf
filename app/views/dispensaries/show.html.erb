@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dispensary.name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @dispensary.city %>
+</p>
+
+<p>
+  <strong>Province:</strong>
+  <%= @dispensary.province %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @dispensary.country %>
+</p>
+
+<p>
+  <strong>Postal code:</strong>
+  <%= @dispensary.postal_code %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @dispensary.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @dispensary.email %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @dispensary.website %>
+</p>
+
+<p>
+  <strong>Kind:</strong>
+  <%= @dispensary.kind %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @dispensary.description %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @dispensary.lat %>
+</p>
+
+<p>
+  <strong>Lng:</strong>
+  <%= @dispensary.lng %>
+</p>
+
+<%= link_to 'Edit', edit_dispensary_path(@dispensary) %> |
+<%= link_to 'Back', dispensaries_path %>

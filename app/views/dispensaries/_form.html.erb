@@ -1,0 +1,77 @@
+<%= form_with(model: dispensary, local: true) do |form| %>
+  <% if dispensary.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dispensary.errors.count, "error") %> prohibited this dispensary from being saved:</h2>
+
+      <ul>
+      <% dispensary.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :dispensary_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :dispensary_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :province %>
+    <%= form.text_field :province, id: :dispensary_province %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country, id: :dispensary_country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :postal_code %>
+    <%= form.text_field :postal_code, id: :dispensary_postal_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, id: :dispensary_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :dispensary_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :website %>
+    <%= form.text_field :website, id: :dispensary_website %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kind %>
+    <%= form.text_field :kind, id: :dispensary_kind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :dispensary_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lat %>
+    <%= form.text_field :lat, id: :dispensary_lat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lng %>
+    <%= form.text_field :lng, id: :dispensary_lng %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
